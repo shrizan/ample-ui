@@ -1,30 +1,60 @@
-.storybook-button {
-  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  border: 0;
-  border-radius: 3em;
-  cursor: pointer;
-  display: inline-block;
-  line-height: 1;
+.btn {
+  @apply border border-zinc-400 text-zinc-600 hover:border-primary duration-100 hover:text-primary;
 }
-.storybook-button--primary {
-  color: white;
-  background-color: #1ea7fd;
+
+.btn-danger {
+  @apply border-red-400 text-red-600 hover:border-red-500 duration-100 hover:text-red-500;
 }
-.storybook-button--secondary {
-  color: #333;
-  background-color: transparent;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+
+.btn-primary {
+  @apply bg-primary text-white hover:bg-primary-300 duration-100 hover:text-white;
 }
-.storybook-button--small {
-  font-size: 12px;
-  padding: 10px 16px;
+
+.btn-primary-danger {
+  @apply bg-red-600 text-white hover:bg-red-500 duration-100 hover:text-white;
 }
-.storybook-button--medium {
-  font-size: 14px;
-  padding: 11px 20px;
+
+.btn-outline {
+  @apply border-primary-300 text-primary-300 hover:border-primary-400 duration-100 hover:text-primary-400;
 }
-.storybook-button--large {
-  font-size: 16px;
-  padding: 12px 24px;
+
+.btn-outline-danger {
+  @apply border-red-300 text-red-300 hover:border-red-400 duration-100 hover:text-red-400;
+}
+
+.btn-dashed {
+  @apply border-dashed;
+}
+
+.btn-dashed-danger {
+  @apply border-red-400 text-red-600 hover:border-red-500 duration-100 hover:text-red-500;
+}
+
+.btn-text {
+  @apply border-0;
+}
+
+.btn-text-danger {
+  @apply text-red-600 duration-100 hover:text-red-500;
+}
+
+.btn-link {
+  @apply border-0 underline underline-offset-4 hover:decoration-primary;
+}
+
+.btn-link-danger {
+  @apply text-red-600 duration-100 hover:text-red-500 hover:decoration-red-500;
+}
+
+
+.btn-sm {
+  @apply rounded-md px-1 py-1 text-sm
+}
+
+.btn-md {
+  @apply rounded-md px-2 py-1 text-base;
+}
+
+.btn-lg {
+  @apply rounded-md px-3 py-2 text-lg;
 }
