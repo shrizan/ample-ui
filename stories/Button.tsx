@@ -46,7 +46,7 @@ export const Button = ({
   const btnClass = ['btn'];
   const btnType = BUTTON_TYPE_TO_CLASS[type];
   btnClass.push(BUTTON_TYPE_TO_CLASS[type])
-  if (danger) btnClass.push(btnType + '-danger');
+  if (danger) btnClass.push(type === "default" ? "btn-danger" : btnType + '-danger');
   btnClass.push(BUTTON_TYPE_TO_CLASS[size]);
   return (
     <button
